@@ -44,8 +44,25 @@ endif
 " key settings
 "
 """""""""""""""""""""""
-noremap j k
-noremap k j
+"noremap j h
+"noremap k j
+"noremap i k
+"noremap h i
+
+"noremap J vh
+"noremap K vj
+"noremap I vk
+"noremap L vl
+
+noremap <C-l> w
+noremap <C-L> W
+noremap <C-j> b
+noremap <C-J> B
+
+"vnoremap <C-j> h
+"vnoremap <C-k> j
+"vnoremap <C-i> k
+"vnoremap <C-h> i
 
 map Q :exit<CR>
 map s <nop>
@@ -58,12 +75,12 @@ map <C-left> <C-w>h
 map <C-right> <C-w>l
 map <C-up> <C-w>k
 map <C-down> <C-w>j
-map <C-h> :vertical resize-3<CR>
-map <C-l> :vertical resize+3<CR>
+"map <C-h> :vertical resize-3<CR>
+"map <C-l> :vertical resize+3<CR>
 
 map <C-n> :tabe<CR>
-map <C-j> :-tabnext<CR>
-map <C-k> :+tabnext<CR>
+"map <C-j> :-tabnext<CR>
+"map <C-k> :+tabnext<CR>
 
 " CTRL-A is Select all
 noremap <C-A> gggH<C-O>G
