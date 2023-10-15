@@ -107,12 +107,14 @@ vnoremap <C-v> p
 nnoremap <C-v> p
 inoremap <C-e> <Esc>
 nnoremap \ i
-nnoremap <Enter> o
+"nnoremap <Enter> o
 " inoremap <C-CR> <Esc>
 nnoremap <BS> i<BS>
 vnoremap <BS> d
 
 vnoremap <C-c> "+y
+
+inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"
 
 """""""""""""""""""""""
 
@@ -128,7 +130,7 @@ inoremap } <c-r>=ClosePair('}')<CR>
 inoremap " <c-r>=QuoteDelim('"')<CR>
 inoremap ' <c-r>=QuoteDelim("'")<CR>
 
-inoremap <Enter> <c-r>=BracketsEnter('}')<CR>
+"inoremap <Enter> <c-r>=BracketsEnter('}')<CR>
 inoremap <S-CR> <c-r>=BracketsEnter('}')<CR>
 
 function BracketsEnter(char)
